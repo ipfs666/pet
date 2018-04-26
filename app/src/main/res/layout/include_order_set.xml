@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_top_bottom_bg"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/switch_balance"
+            android:text="@string/tip_balance"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/t14" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_text_body"
+            android:textSize="@dimen/t14" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bottom_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_reward_point"
+            android:textColor="@color/color_text_label"
+            android:textSize="@dimen/t14" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/t14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bottom_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_coupon"
+            android:textColor="@color/color_text_label"
+            android:textSize="@dimen/t14" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_coupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_white"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch_invoice"
+            android:layout_alignTop="@+id/switch_invoice"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/switch_invoice"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_text_label"
+            android:textSize="@dimen/t14" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tv_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch_invoice"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_bg_gray"
+            android:gravity="end"
+            android:hint="@string/hint_invoice"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="@string/hint_invoice"
+            android:textColor="@color/color_text_caption"
+            android:textSize="@dimen/t14"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

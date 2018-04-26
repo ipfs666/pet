@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/all_padding"
+        android:paddingLeft="@dimen/all_padding"
+        android:paddingRight="45dp"
+        android:paddingTop="110dp"
+        android:scrollbars="none" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/hint_say_something"
+        android:inputType="textMultiLine"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/all_padding"
+        android:paddingRight="@dimen/all_padding"
+        android:paddingTop="@dimen/all_padding"
+        android:textColor="@color/color_text_caption"
+        android:textColorHint="@color/color_hint_text"
+        android:textSize="@dimen/t16" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/article_post_delete"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/t16"
+        android:visibility="gone"
+        android:textColor="@color/color_text_white"
+        android:gravity="center"/>
+
+</RelativeLayout>
